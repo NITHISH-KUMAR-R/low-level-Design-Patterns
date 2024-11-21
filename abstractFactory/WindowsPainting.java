@@ -1,6 +1,6 @@
 package com.designpattern.lld.abstractFactory;
 
-public class WindowsButton implements Button,CheckBox{
+public class WindowsPainting implements Button,CheckBox{
 
     @Override
     public void paint() {

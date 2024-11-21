@@ -4,12 +4,12 @@ public class WindowsFactory implements GuiFactory{
 
     @Override
     public Button creataButton() {
-        return new WindowsButton();
+        return new WindowsPainting();
     }
 
     @Override
     public CheckBox createCheckBox() {
-        return new WindowsButton();
+        return new WindowsPainting();
     }
 }
 

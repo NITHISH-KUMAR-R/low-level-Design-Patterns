@@ -1,6 +1,6 @@
 package com.designpattern.lld.abstractFactory;
 
-public class MacButton implements Button,CheckBox{
+public class MacPainting implements Button,CheckBox{
 
     @Override
     public void paint() {

@@ -4,11 +4,11 @@ public class MacFactory implements GuiFactory{
 
     @Override
     public Button creataButton() {
-        return new MacButton();
+        return new MacPainting();
     }
 
     @Override
     public CheckBox createCheckBox() {
-        return new MacButton();
+        return new MacPainting();
     }
 }
