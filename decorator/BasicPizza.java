@@ -5,7 +5,7 @@ public class BasicPizza implements  Pizza{
 
     @Override
     public String getDescription() {
-        return "Normal Pizza";
+        return "Normal Pizza ";
     }
 
     @Override

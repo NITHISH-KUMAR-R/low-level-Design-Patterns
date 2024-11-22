@@ -6,7 +6,7 @@ public class ChickenPizza extends PizzaDecorator {
         super(pizza);
     }
     public String getDescription(){
-        return pizza.getDescription()+"Chicken added";
+        return pizza.getDescription()+" and Chicken added";
 
     }
 
