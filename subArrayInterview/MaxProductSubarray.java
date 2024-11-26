@@ -23,8 +23,6 @@ class MaxProductSubarray {
 
         //  }
         //  return result;
-
-
         int n = arr.length;
         int res = Integer.MIN_VALUE;
         int  l = 0; int r =0;
