@@ -1,8 +1,9 @@
 package com.designpattern.lld.subArrayInterview;
+
 class MaxProductSubarray {
     // Function to find maximum product subarray
     int maxProduct(int[] arr) {
-        if(arr==null || arr.length==0) return 0;
+        if (arr == null || arr.length == 0) return 0;
         // // code here
         // int maxProd = arr[0];
         //  int  minProd = arr[0];
@@ -25,11 +26,12 @@ class MaxProductSubarray {
         //  return result;
         int n = arr.length;
         int res = Integer.MIN_VALUE;
-        int  l = 0; int r =0;
-        for(int i =0;i<arr.length;i++){
-            l = (l==0?1:l)*arr[i];
-            r=(r==0?1:r)*arr[n-1-i];
-            res = Math.max(res,Math.max(l,r));
+        int l = 0;
+        int r = 0;
+        for (int i = 0; i < arr.length; i++) {
+            l = (l == 0 ? 1 : l) * arr[i];
+            r = (r == 0 ? 1 : r) * arr[n - 1 - i];
+            res = Math.max(res, Math.max(l, r));
         }
         return res;
     }
