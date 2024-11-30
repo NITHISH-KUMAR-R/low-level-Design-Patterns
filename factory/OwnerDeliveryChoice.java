@@ -2,12 +2,12 @@ package com.designpattern.lld.factory;
 
 public class OwnerDeliveryChoice {
     public static void main(String[] args) {
-        Delivery bike = DeliveryHubFactory.getdelivery("bike");
-        Delivery van = DeliveryHubFactory.getdelivery("van");
-        Delivery drone = DeliveryHubFactory.getdelivery("drone");
+        Delivery bike = DeliveryHubFactory.getDelivery("bike");
+        Delivery van = DeliveryHubFactory.getDelivery("van");
+        Delivery drone = DeliveryHubFactory.getDelivery("drone");
 
-        bike.deliver();
-        van.deliver();
-        drone.deliver();
+        bike.performDelivery();
+        van.performDelivery();
+        drone.performDelivery();
     }
 }

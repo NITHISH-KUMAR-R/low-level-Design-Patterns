@@ -1,0 +1,7 @@
+
+
+Components of factory Design Pattern;
+ Product - > Delivery interface
+ concrete Product - Drone Delivery and VanDelivery and BikeDelivery classes that implements Delivery interface
+ creator - DeliveryFactory - but most cases it won't need
+ concrete creator - Implements Delivery Factory - here we are using switch case to create instance

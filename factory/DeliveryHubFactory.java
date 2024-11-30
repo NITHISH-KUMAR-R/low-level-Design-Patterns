@@ -1,7 +1,7 @@
 package com.designpattern.lld.factory;
 
-public class DeliveryHubFactory {
-    public static Delivery getdelivery(String type){
+public class DeliveryHubFactory{
+    public static  Delivery getDelivery(String type){
         switch (type){
             case "bike" :
                 return new BikeDelivery();
