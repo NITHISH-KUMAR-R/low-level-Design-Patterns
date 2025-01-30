@@ -1,0 +1,17 @@
+Observer Design Pattern: The Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects.
+When one object (the subject) changes its state, it notifies all dependent objects (observers) so that they can update themselves accordingly.
+This way, the observers(subscribers) get the recent updates and can take appropriate actions based on the new information.
+
+Observer Pattern:
+The subject (publisher) maintains a list of observers (subscribers) and notifies them directly of any changes.
+The observers are aware of the subject they are observing.
+WhatsApp displaying update statuses, the application itself acts as the subject (publisher), while the users are the observers (subscribers).
+Here's how it aligns with the Observer pattern:
+
+WhatsApp (Subject): The application that changes its state by posting update statuses.
+Users (Observers): People using WhatsApp who get notified of these updates and can view the status changes.
+
+When WhatsApp updates its status, it pushes this information to all users (observers).
+Users then receive the notification and update their app to see the new status.
+This automatic update and notification system reflects the Observer pattern,
+ where the subject keeps all observers informed about any state changes.
