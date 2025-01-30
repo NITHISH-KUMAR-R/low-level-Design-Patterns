@@ -8,13 +8,13 @@ public class ObserverPattern {
         PhoneSubscriber phone = new PhoneSubscriber();
         TvSubscriber tv = new TvSubscriber();
         WebsiteSubscriber websiteSubscriber  = new WebsiteSubscriber();
-        publisher.addObservers(phone);
-        publisher.addObservers(tv);
-        publisher.addObservers(websiteSubscriber);
+        publisher.addObserver(phone);
+        publisher.addObserver(tv);
+        publisher.addObserver(websiteSubscriber);
 
-        phone.weatherUpdate("rainy");
+        phone.weatherUpdate("sunny");
         tv.weatherUpdate("sunny");
-        websiteSubscriber.weatherUpdate("cloudy");
+        websiteSubscriber.weatherUpdate("sunny");
 
     }
 }

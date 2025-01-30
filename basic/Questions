@@ -21,4 +21,4 @@ It initializes all instance variables to their default values (e.g., 0 for integ
   this() and super() cannot be used together in the same constructor because both must be the first statement.
   If not explicitly stated, the compiler adds a default call to super().
 7.How does constructor chaining work?
-  Answer: Constructor chaining refers to calling one constructor from another within the same class or a parent class using this() or super().
+  Answer:   Constructor chaining refers to calling one constructor from another within the same class or a parent class using this() or super().
