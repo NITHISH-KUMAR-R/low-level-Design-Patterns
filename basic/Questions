@@ -1,0 +1,24 @@
+1.What happens if you don't define a constructor in a class?
+Answer: The compiler provides a default constructor.
+It initializes all instance variables to their default values (e.g., 0 for integers, null for objects).
+2. What is the purpose of the this() constructor call?
+  Answer:
+  To call another constructor in the same class.
+  Reduces code duplication by reusing initialization logic.
+  Must be the first statement in the constructor.
+3.What is the purpose of the super() constructor call?
+  Answer:
+  To call the constructor of the parent class.
+  Used to initialize the base class members.
+  Must be the first statement in a derived class constructor.
+4.What is a private constructor?
+  Answer: A private constructor restricts the instantiation of a class from outside the class.
+  It is commonly used in Singleton patterns.
+5.How can you prevent object creation in a class?
+  Answer: By making the constructor private and not providing any method to access the instance.
+6.What is the order of execution for this() and super() in constructors?
+  Answer:
+  this() and super() cannot be used together in the same constructor because both must be the first statement.
+  If not explicitly stated, the compiler adds a default call to super().
+7.How does constructor chaining work?
+  Answer: Constructor chaining refers to calling one constructor from another within the same class or a parent class using this() or super().
