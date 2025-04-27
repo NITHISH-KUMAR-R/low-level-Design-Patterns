@@ -15,6 +15,5 @@ public class SortingContext{
 
     public void peformSort(int[] array) {
         sortingStrategy.sort(array);
-
     }
 }
