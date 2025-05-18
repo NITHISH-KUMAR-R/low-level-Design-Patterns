@@ -5,6 +5,7 @@ public class BillPugSingleton {
     private BillPugSingleton(){
 
         System.out.println("hello for first time");
+
     }
     public static class Singleton{
 
