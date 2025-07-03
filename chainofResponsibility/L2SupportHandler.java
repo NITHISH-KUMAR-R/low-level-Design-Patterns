@@ -7,7 +7,7 @@ public class L2SupportHandler implements  SupportHandler{
     public void handleRequest(Request request) {
 
         if(request.getPriority()==Priority.MEDIUM){
-            System.out.println("Yes we can handle l2 request .we can process this request");
+            System.out.println("Yes its based on l2 support we can process this request");
         } else if(request!=null) {
             System.out.println("Not handled here moving to l3");
             nextHandler.handleRequest(request);

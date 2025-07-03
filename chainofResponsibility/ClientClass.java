@@ -5,6 +5,7 @@ public class ClientClass {
         SupportHandler l1 = new L1SupportHandler();
         SupportHandler l2 = new L2SupportHandler();
         SupportHandler l3 = new L3SupportHandler();
+
         l1.setNextHandler(l2);
         l2.setNextHandler(l3);
 
@@ -14,7 +15,7 @@ public class ClientClass {
         Request r4 = new Request(Priority.NONE);
 
         l1.handleRequest(r1);
-        l2.handleRequest(r2);
+        l1.handleRequest(r2);
         l1.handleRequest(r3);
         l1.handleRequest(r4);
     }

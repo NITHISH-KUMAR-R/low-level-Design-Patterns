@@ -7,7 +7,7 @@ public class L3SupportHandler implements  SupportHandler{
     @Override
     public void handleRequest(Request request) {
         if(request.getPriority()==Priority.HIGH){
-            System.out.println(" yes our l3 team can proccess this request");
+            System.out.println("Yes its based on l3 support, our l3 team can process this request");
         }else{
             System.out.println("Request cannot be handled");
         }
@@ -15,6 +15,6 @@ public class L3SupportHandler implements  SupportHandler{
 
     @Override
     public void setNextHandler(SupportHandler supportHandler) {
-//this.nextHandler=supportHandler;
+            this.nextHandler=supportHandler;
     }
 }
