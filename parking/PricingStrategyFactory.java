@@ -7,7 +7,7 @@ public class PricingStrategyFactory {
     public static  PricingStrategy getPricingStragegy(String contextType){
         DayOfWeek today = LocalDate.now().getDayOfWeek();
 
-        switch (contextType){
+        switch (contextType.toLowerCase()){
             case  "concert":
                 return new ConcertPricingStrategy();
             case "weekday":
