@@ -13,7 +13,6 @@ public class Singleton {
         synchronized (Singleton.class){
 
             if(instance==null){
-
                 instance = new Singleton();
             }
          }
